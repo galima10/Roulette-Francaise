@@ -1,0 +1,24 @@
+.bille{
+    width: 100%;
+    height: 5.3%;
+    position: absolute;
+    background-color: aliceblue;
+    border-radius: 50%;
+    z-index: 1;
+}
+.ens-bille{
+    width: 4%;
+    height: 76%;
+    position: absolute;
+}
+
+
+.bille-num{
+    width: 400%;
+    height: 400%;
+    position: absolute;
+    background-color: aliceblue;
+    bottom: -200%;
+    z-index: 1;
+    border-radius: 50%;
+}

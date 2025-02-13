@@ -1,0 +1,633 @@
+.info-grille{
+    width: 100%;
+    height: 100%;
+    left:0;
+    position: absolute;
+    user-select: none;
+    transition: 1s;
+}
+.info-roue{
+    background-color: white;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transition: 1s;
+    user-select: none;
+    left:0;
+}
+
+.numero-tire{
+    position: absolute;
+    width: 5%;
+    height: 5%;
+    pointer-events: none;
+    opacity: 0;
+}
+.info-croupier-roue{
+    width: 90%;
+    height: 15%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 170%;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 10%;
+}
+.resultat-roue{
+    margin-top: 20%;
+    width: 90%;
+    height: 15%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 200%;
+    font-weight: bold;
+    text-align: center;
+    border-bottom: 3px solid rgb(50, 56, 80);
+    border-top: 3px solid rgb(50, 56, 80);
+}
+
+.ens-choix-paris{
+    position: absolute;
+    background-color: white;
+    width: 100%;
+    height: 100%;
+}
+
+.choix-niveau-1{
+    width: 100%;
+    height: calc(100%/8);
+    display: flex;
+    font-size: 150%;
+}
+.choix-niveau-2{
+    width: 100%;
+    height: calc(100%/8);
+    display: flex;
+    font-size: 120%;
+}
+.choix-paris{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 50%;
+    position: relative;
+}
+.texte-paris{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 85%;
+    height: 75%;
+    cursor: pointer;
+    transition: .5s;
+    text-align: center;
+    color: white
+}
+.texte-paris:hover{
+    background-color: rgb(124, 131, 159);
+    
+}
+.texte-paris:not(:hover){
+    background-color: rgb(50, 56, 80);
+}
+
+.desactiver-inte{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 85%;
+    height: 75%;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.793);
+    font-weight: bold;
+}
+.desactiver-exte{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 85%;
+    height: 75%;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.793);
+    font-weight: bold;
+}
+
+.instructions-croupier-1{
+    width: 100%;
+    height: calc(100%/8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 170%;
+    font-weight: bold;
+    border-bottom: 2px solid rgb(50, 56, 80);
+}
+.instructions-croupier-2{
+    width: 100%;
+    height: calc(100%/10);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 170%;
+    font-weight: bold;
+}
+.instructions-croupier-3{
+    border-bottom: 2px solid rgb(50, 56, 80);
+    border-top: 2px solid rgb(50, 56, 80);
+    width: 100%;
+    height: calc(100%/10);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 150%;
+    margin-top: 15%;
+    font-weight: bold;
+}
+
+.precedent-paris{
+    width: 100%;
+    height: 8%;
+    margin-top: 10%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 150%;
+    cursor: pointer;
+    transition: .5s;
+}
+.precedent-paris:hover{
+    background-color: rgb(188, 198, 237);
+}
+.precedent-paris:not(:hover){
+    background-color: rgb(140, 157, 225);
+}
+
+.retour-mises{
+    width: 100%;
+    height: 10%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 150%;
+    cursor: pointer;
+    transition: .5s;
+    position: absolute;
+    bottom: 0;
+}
+.retour-mises:hover{
+    background-color: rgb(188, 198, 237);
+}
+.retour-mises:not(:hover){
+    background-color: rgb(140, 157, 225);
+}
+
+.ens-choix-mises{
+    position: absolute;
+    background-color: white;
+    width: 100%;
+    height: 100%;
+}
+
+.titre-choix-mises{
+    width: 100%;
+    height: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-weight: bold;
+    font-size: 200%;
+}
+.quota-gains{
+    border-bottom: 2px solid rgb(50, 56, 80);
+    width: 100%;
+    height: 8%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 150%;
+}
+
+.ens-quantite{
+    border-bottom: 2px solid rgb(50, 56, 80);
+    width: 100%;
+    height: 15%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+.btn-moins{
+    position: absolute;
+    width: 8%;
+    height: 50%;
+    left :0;
+    border: 2px solid rgb(50, 56, 80);
+    margin-left: 4%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 200%;
+    cursor: pointer;
+}
+.btn-moins:active{
+    background-color: rgb(50, 56, 80);
+    color: white;
+}
+.btn-plus:active{
+    background-color: rgb(50, 56, 80);
+    color: white;
+}
+.btn-plus{
+    position: absolute;
+    width: 8%;
+    height: 50%;
+    right: 0;
+    border: 2px solid rgb(50, 56, 80);
+    margin-right: 4%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 200%;
+    cursor: pointer;
+}
+
+.nbr-quantite{
+    position: absolute;
+    top: 0;
+    width: 25%;
+    height: 45%;
+    background-color: rgb(150, 157, 181);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-weight: bold;
+    font-size: 120%;
+    text-align: center;
+    color: white;
+}
+.barre-quantite{
+    position: absolute;
+    bottom: 20%;
+    background-color: rgb(187, 191, 219);
+    width: 70%;
+    height: 12%;
+    border-radius: 100em;
+    display: flex;
+    align-items: center;
+    /* overflow: hidden; */
+}
+.draggable {
+    width: 10%;
+    height: 270%;
+    background-color: rgb(124, 131, 159);
+    color: #fff;
+    position: absolute;
+    user-select: none;
+    z-index: 1;
+    border-radius: 50%;
+}
+.flux-quantite{
+    width: 0;
+    height: 100%;
+    border-radius: 100em;
+    background-color: rgb(50, 56, 80);
+    position: relative;
+}
+
+
+.btn-valider-mises{
+    width: 100%;
+    height: 8%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 150%;
+    cursor: pointer;
+    transition: .5s;
+    color: white;
+}
+.btn-valider-mises:hover{
+    background-color: rgb(124, 131, 159);
+}
+.btn-valider-mises:not(:hover){
+    background-color: rgb(50, 56, 80);
+}
+
+.info-mises{
+    width: 100%;
+    height: 65%;
+    position: absolute;
+    bottom: 0;
+}
+.nbr-mise{
+    border-bottom: 3px solid rgb(50, 56, 80);
+    border-top: 3px solid rgb(50, 56, 80);
+    width: 100%;
+    height: 10%;
+    display: flex;
+    align-items: center;
+    font-size: 150%;
+}
+.liste-mises{
+    width: 100%;
+    height: 65%;
+    position: relative;
+}
+.btn-valider-toutes-mises{
+    width: 100%;
+    height: 12.5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 150%;
+    transition: .5s;
+    cursor: pointer;
+    
+}
+.btn-valider-toutes-mises:hover{
+    background-color: rgb(124, 131, 159);
+    color: black;
+}
+.btn-valider-toutes-mises:not(:hover){
+    background-color: rgb(50, 56, 80);
+    color: white;
+}
+.btn-reinitialiser{
+    width: 100%;
+    height: 12.5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 150%;
+    cursor: pointer;
+    transition: .5s;
+}
+.btn-reinitialiser:hover{
+    background-color: rgb(126, 134, 168);
+    color: white;
+}
+.btn-reinitialiser:not(:hover){
+    background-color: rgb(140, 157, 225);
+    color: black;
+}
+.mises{
+    border-bottom: 2px solid rgb(50, 56, 80);
+    width: 95%;
+    height: calc(100%/5.5);
+    display: flex;
+    align-items: center;
+    font-size: 110%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.info-gains{
+    background-color: white;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transition: 1s;
+    user-select: none;
+    left:0;
+}
+
+
+.annonce-resultat{
+    width: 100%;
+    height: calc(100% / 8);
+    border-bottom: 3px solid rgb(50, 56, 80);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 140%;
+}
+
+.gains-gagnantes{
+    width: 100%;
+    height: calc(100% - 100%/8);
+    position: absolute;
+    bottom: 0;
+}
+.titre-mises-gagnantes{
+    position: relative;
+    margin-top: 3%;
+    width: 90%;
+    height: calc(100% /14);
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: bold;
+    font-size: 160%;
+}
+.mises-gagnantes{
+    position: relative;
+    margin-top: 3%;
+    width: 100%;
+    height: calc(100% /2.5);
+}
+.mises-gag{
+    position: relative;
+    height: calc(100% / 5);
+    width: 95%;
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 100%;
+}
+.titre-mise-gagnante{
+    position: relative;
+    margin-top: 3%;
+    border-top: 3px solid rgb(50, 56, 80);
+    width: 90%;
+    height: 60%;
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: bold;
+    font-size: 130%;
+}
+.mise-gagnante{
+    position: relative;
+    margin-top: 3%;
+    width: 90%;
+    height: calc(100% /3.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 130%;
+}
+.gains-totaux{
+    width: 100%;
+    height: calc(100% /2);
+    font-size: 150%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: bold;
+}
+.gains{
+    width: 100%;
+    height: 30%;
+}
+
+.mises-prison{
+    width: 100%;
+    height: calc(100% - 100%/8);
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+}
+
+.ens-regle-0{
+    margin-top: 5%;
+    width: 100%;
+    height: calc(100% / 1.5);
+}
+.info-croupier-4{
+    width: 90%;
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: bold;
+    font-size: 140%;
+    height: calc(100% /6);
+}
+.mise-prison{
+    margin-top: 3%;
+    width: 90%;
+    height: calc(100% /4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: bold;
+    font-size: 150%;
+    border-bottom: 3px solid rgb(50, 56, 80);
+}
+.info-croupier-5{
+    margin-top: 3%;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: bold;
+    font-size: 130%;
+    height: calc(100% /6);
+}
+.choix-zero{
+    margin-top: 7%;
+    width: 100%;
+    height: calc(100% - 2*(100%/6) - 100% / 4 - 6.5*3%);
+    display: flex;
+}
+.regle-zero{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.choix-0{
+    width: 90%;
+    height: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 130%;
+    transition: .5s;
+    cursor: pointer;
+    color: white;
+}
+.choix-0:hover{
+    background-color: rgb(124, 131, 159);
+}
+.choix-0:not(:hover){
+    background-color: rgb(50, 56, 80);
+    
+}
+
+.gains-regle-zero{
+    width: 100%;
+    height: 80%;
+}
+
+.mise-prison-gains{
+
+    width: 100%;
+    height: calc(100% /4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 150%;
+}
+
+.info-croupier-6{
+    border-top: 3px solid rgb(50, 56, 80);
+    margin-top: 3%;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: bold;
+    font-size: 150%;
+    height: calc(100% /6);
+}
+#gains-prison{
+    margin-top: 3%;
+    width: 100%;
+    height: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 150%;
+}
+
