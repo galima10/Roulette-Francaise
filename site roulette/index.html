@@ -1,0 +1,1004 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="css/roue/ens-roue.css" rel="stylesheet" type="text/css">
+    <link href="css/roue/numeros-roue.css" rel="stylesheet" type="text/css">
+    <link href="css/bille.css" rel="stylesheet" type="text/css">
+    <link href="css/grille/grille.css" rel="stylesheet" type="text/css">
+    <link href="css/grille/numero-case.css" rel="stylesheet" type="text/css">
+    <link href="css/grille/jetons.css" rel="stylesheet" type="text/css">
+    <link href="css/general.css" rel="stylesheet" type="text/css">
+    <link href="css/info.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <div class="cadre-jeu">
+        <div class="nbr-unite">
+            <span class="texte-nbr-unite">Nombre d'unités : </span>
+            <span class="nombre-unite"></span>
+            <span class="addi-soustra none"></span>
+        </div>
+        <div class="nbr-tour">
+            Tour n°
+            <span class="nombre-tour">0</span>
+        </div>
+        <div class="objectif op0" style="bottom:60%; left:40%; transform: scale(3); border: transparent;">
+            Objectif : 
+            <span style="margin-left: 3%; margin-right: 3%;" id="nbr-objectif"></span>
+            unités
+        </div>
+        <div class="jeu">
+            <div class="partie-roue">
+                <div class="ens-roue">
+                    <div class="structure-roue">
+                        <div class="numero numero-0">
+                            <div class="petit-numero" id="num-0"></div>
+                        </div>
+                        <div class="numero numero-1" >
+                            <div class="petit-numero" id="num-1"></div>
+                        </div>
+                        <div class="numero numero-2">
+                            <div class="petit-numero" id="num-2"></div>
+                        </div>
+                        <div class="numero numero-3">
+                            <div class="petit-numero" id="num-3"></div>
+                        </div>
+                        <div class="numero numero-4">
+                            <div class="petit-numero" id="num-4"></div>
+                        </div>
+                        <div class="numero numero-5">
+                            <div class="petit-numero" id="num-5"></div>
+                        </div>
+                        <div class="numero numero-6">
+                            <div class="petit-numero" id="num-6"></div>
+                        </div>
+                        <div class="numero numero-7">
+                            <div class="petit-numero" id="num-7"></div>
+                        </div>
+                        <div class="numero numero-8">
+                            <div class="petit-numero" id="num-8"></div>
+                        </div>
+                        <div class="numero numero-9">
+                            <div class="petit-numero" id="num-9"></div>
+                        </div>
+                        <div class="numero numero-10">
+                            <div class="petit-numero" id="num-10"></div>
+                        </div>
+                        <div class="numero numero-11">
+                            <div class="petit-numero" id="num-11"></div>
+                        </div>
+                        <div class="numero numero-12">
+                            <div class="petit-numero" id="num-12"></div>
+                        </div>
+                        <div class="numero numero-13">
+                            <div class="petit-numero" id="num-13"></div>
+                        </div>
+                        <div class="numero numero-14">
+                            <div class="petit-numero" id="num-14"></div>
+                        </div>
+                        <div class="numero numero-15">
+                            <div class="petit-numero" id="num-15"></div>
+                        </div>
+                        <div class="numero numero-16">
+                            <div class="petit-numero" id="num-16"></div>
+                        </div>
+                        <div class="numero numero-17">
+                            <div class="petit-numero" id="num-17"></div>
+                        </div>
+                        <div class="numero numero-18">
+                            <div class="petit-numero" id="num-18"></div>
+                        </div>
+                        <div class="numero numero-19">
+                            <div class="petit-numero" id="num-19"></div>
+                        </div>
+                        <div class="numero numero-20">
+                            <div class="petit-numero" id="num-20"></div>
+                        </div>
+                        <div class="numero numero-21">
+                            <div class="petit-numero" id="num-21"></div>
+                        </div>
+                        <div class="numero numero-22">
+                            <div class="petit-numero" id="num-22"></div>
+                        </div>
+                        <div class="numero numero-23">
+                            <div class="petit-numero" id="num-23"></div>
+                        </div>
+                        <div class="numero numero-24">
+                            <div class="petit-numero" id="num-24"></div>
+                        </div>
+                        <div class="numero numero-25">
+                            <div class="petit-numero" id="num-25"></div>
+                        </div>
+                        <div class="numero numero-26">
+                            <div class="petit-numero" id="num-26"></div>
+                        </div>
+                        <div class="numero numero-27">
+                            <div class="petit-numero" id="num-27"></div>
+                        </div>
+                        <div class="numero numero-28">
+                            <div class="petit-numero" id="num-28"></div>
+                        </div>
+                        <div class="numero numero-29">
+                            <div class="petit-numero" id="num-29"></div>
+                        </div>
+                        <div class="numero numero-30">
+                            <div class="petit-numero" id="num-30"></div>
+                        </div>
+                        <div class="numero numero-31">
+                            <div class="petit-numero" id="num-31"></div>
+                        </div>
+                        <div class="numero numero-32">
+                            <div class="petit-numero" id="num-32"></div>
+                        </div>
+                        <div class="numero numero-33">
+                            <div class="petit-numero" id="num-33"></div>
+                        </div>
+                        <div class="numero numero-34">
+                            <div class="petit-numero" id="num-34"></div>
+                        </div>
+                        <div class="numero numero-35">
+                            <div class="petit-numero" id="num-35"></div>
+                        </div>
+                        <div class="numero numero-36">
+                            <div class="petit-numero" id="num-36"></div>
+                        </div>
+                    </div>
+                    <div class="ens-bille">
+                        <div class="bille"></div>
+                    </div>
+                    
+                    
+                    <div class="roue-centre"></div>
+                    <div class="numero-tire"></div>
+                    <div class="main">
+                        <div class="bille-main"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="partie-grille">
+                <div class="ens-grille">
+                    <div class="grde-ligne1">
+                        <div class="grde1-sousligne1" style="border-radius: 30px 0 0 0; overflow: hidden;">
+                            <div class="grde1-colonne1">
+                                <div class="choix case-exterieure manque" id="case-manque">
+                                    <div class="text-grosse-case1">
+                                        MANQUE<br><span class="petit-texte">1 à 18</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="grde1-colonne2">
+                                <div class="choix case-exterieure impair" id="case-impair">
+                                    <div class="text-grosse-case1">
+                                        IMPAIR
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="grde1-colonne3">
+                                <div class="choix case-exterieure rouge" id="case-rouge">
+                                    <div class="symbole-rouge"></div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="grde1-sousligne2" style="border-radius: 0 30px 0 0; overflow: hidden;">
+                            <div class="grde1-ligne1">
+                                <div class="choix case-exterieure">
+                                    <div class="text-douzaine">
+                                        12<br>P
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="grde1-ligne2">
+                                <div class="choix case-exterieure">
+                                    <div class="text-douzaine">
+                                        12<br>M
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="grde1-ligne3">
+                                <div class="choix case-exterieure">
+                                    <div class="text-douzaine">
+                                        12<br>D
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grde-ligne2">
+                        <div class="case-0" style="border-radius: 100% 0 0 100%; overflow: hidden;">
+                            <div class="choix case-interieure num0" id="case-num0">
+                                <div class="text-num0">
+                                    0
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ligne">
+                            <div class="sous-ligne1">
+                                <div class="case">
+                                    <div class="choix case-interieure case-couleur-rouge num3" id="case-num3">
+                                        <div class="text-num">
+                                            3
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="case">
+                                    <div class="choix case-interieure num6" id="case-num6">
+                                        <div class="text-num">
+                                            6
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="case">
+                                    <div class="choix case-interieure case-couleur-rouge num9" id="case-num9">
+                                        <div class="text-num">
+                                            9
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="case">
+                                    <div class="choix case-interieure case-couleur-rouge num12" id="case-num12">
+                                        <div class="text-num">
+                                            12
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="case">
+                                    <div class="choix case-interieure num15" id="case-num15">
+                                        <div class="text-num">
+                                            15
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="case">
+                                    <div class="choix case-interieure case-couleur-rouge num18" id="case-num18">
+                                        <div class="text-num">
+                                            18
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="case">
+                                    <div class="choix case-interieure case-couleur-rouge num21" id="case-num21">
+                                        <div class="text-num">
+                                            21
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="case">
+                                    <div class="choix case-interieure num24" id="case-num24">
+                                        <div class="text-num">
+                                            24
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="case">
+                                    <div class="choix case-interieure case-couleur-rouge num27" id="case-num27">
+                                        <div class="text-num">
+                                            27
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="case">
+                                    <div class="choix case-interieure case-couleur-rouge num30" id="case-num30">
+                                        <div class="text-num">
+                                            30
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="case">
+                                    <div class="choix case-interieure num33" id="case-num33">
+                                        <div class="text-num">
+                                            33
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="case">
+                                    <div class="choix case-interieure case-couleur-rouge num36" id="case-num36">
+                                        <div class="text-num">
+                                            36
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="sous-ligne2">
+                                <div class="case-colonne">
+                                    <div class="choix case-exterieure colonne3" id="case-colonne3">
+                                        <div class="text-colonne">
+                                            COL<br>3
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ligne">
+                            <div class="sous-ligne1">
+                                <div class="case">
+                                    <div class="choix case-interieure num2" id="case-num2">
+                                        <div class="text-num">
+                                            2
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="case">
+                                    <div class="choix case-interieure case-couleur-rouge num5" id="case-num5">
+                                        <div class="text-num">
+                                            5
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="case">
+                                    <div class="choix case-interieure num8" id="case-num8">
+                                        <div class="text-num">
+                                            8
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="case">
+                                    <div class="choix case-interieure num11" id="case-num11">
+                                        <div class="text-num">
+                                            11
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="case">
+                                    <div class="choix case-interieure case-couleur-rouge num14" id="case-num14">
+                                        <div class="text-num">
+                                            14
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="case">
+                                    <div class="choix case-interieure num17" id="case-num17">
+                                        <div class="text-num">
+                                            17
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="case">
+                                    <div class="choix case-interieure num20" id="case-num20">
+                                        <div class="text-num">
+                                            20
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="case">
+                                    <div class="choix case-interieure case-couleur-rouge num23" id="case-num23">
+                                        <div class="text-num">
+                                            23
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="case">
+                                    <div class="choix case-interieure num26" id="case-num26">
+                                        <div class="text-num">
+                                            26
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="case">
+                                    <div class="choix case-interieure num29" id="case-num29">
+                                        <div class="text-num">
+                                            29
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="case">
+                                    <div class="choix case-interieure case-couleur-rouge num32" id="case-num32">
+                                        <div class="text-num">
+                                            32
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="case">
+                                    <div class="choix case-interieure num35" id="case-num35">
+                                        <div class="text-num">
+                                            35
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="sous-ligne2">
+                                <div class="case-colonne">
+                                    <div class="choix case-exterieure colonne2" id="case-colonne2">
+                                        <div class="text-colonne">
+                                            COL<br>2
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ligne">
+                            <div class="sous-ligne1">
+                                <div class="case">
+                                    <div class="choix case-interieure case-couleur-rouge num1" id="case-num1">
+                                        <div class="text-num">
+                                            1
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="case">
+                                    <div class="choix case-interieure num4" id="case-num4">
+                                        <div class="text-num">
+                                            4
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="case">
+                                    <div class="choix case-interieure case-couleur-rouge num7" id="case-num7">
+                                        <div class="text-num">
+                                            7
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="case">
+                                    <div class="choix case-interieure num10" id="case-num10">
+                                        <div class="text-num">
+                                            10
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="case">
+                                    <div class="choix case-interieure num13" id="case-num13">
+                                        <div class="text-num">
+                                            13
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="case">
+                                    <div class="choix case-interieure case-couleur-rouge num16" id="case-num16">
+                                        <div class="text-num">
+                                            16
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="case">
+                                    <div class="choix case-interieure case-couleur-rouge num19" id="case-num19">
+                                        <div class="text-num">
+                                            19
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="case">
+                                    <div class="choix case-interieure num22" id="case-num22">
+                                        <div class="text-num">
+                                            22
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="case">
+                                    <div class="choix case-interieure case-couleur-rouge num25" id="case-num25">
+                                        <div class="text-num">
+                                            25
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="case">
+                                    <div class="choix case-interieure num28" id="case-num28">
+                                        <div class="text-num">
+                                            28
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="case">
+                                    <div class="choix case-interieure num31" id="case-num31">
+                                        <div class="text-num">
+                                            31
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="case">
+                                    <div class="choix case-interieure case-couleur-rouge num34" id="case-num34">
+                                        <div class="text-num">
+                                            34
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="sous-ligne2">
+                                <div class="case-colonne">
+                                    <div class="choix case-exterieure colonne1" id="case-colonne1">
+                                        <div class="text-colonne">
+                                            COL<br>1
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grde-ligne1">
+                        <div class="grde1-sousligne1" style="border-radius: 0 0 0 30px; overflow: hidden;">
+                            <div class="grde1-colonne1">
+                                <div class="choix case-exterieure passe" id="case-passe">
+                                    <div class="text-grosse-case2">
+                                        PASSE<br><span class="petit-texte">19 à 36</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="grde1-colonne2">
+                                <div class="choix case-exterieure pair" id="case-pair">
+                                    <div class="text-grosse-case2">
+                                        PAIR
+                                    </div>
+                                    <!-- <div class="chaine"></div> -->
+                                </div>
+                            </div>
+                            <div class="grde1-colonne3">
+                                <div class="choix case-exterieure noir" id="case-noire">
+                                    <div class="symbole-noir"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="grde1-sousligne2" style="border-radius: 0 0 30px 0; overflow: hidden;">
+                            <div class="grde1-ligne1">
+                                <div class="choix case-exterieure d12D" id="case-12D">
+                                    <div class="text-douzaine">
+                                        12<br>D
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="grde1-ligne2">
+                                <div class="choix case-exterieure d12M" id="case-12M">
+                                    <div class="text-douzaine">
+                                        12<br>M
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="grde1-ligne3">
+                                <div class="choix case-exterieure d12P" id="case-12P">
+                                    <div class="text-douzaine">
+                                        12<br>P
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Jetons de mises -->
+                    <div class="">
+                        <!-- Paris intérieurs -->
+                            <!-- Jetons mises à cheval horizontalement -->
+                            <div>
+                                <div class="jeton targetjeton jeton-inte a-chev-H chev-0-1 op0" id="chev-0-1"></div>
+                                <div class="jeton targetjeton jeton-inte a-chev-H chev-0-2 op0" id="chev-0-2"></div>
+                                <div class="jeton targetjeton jeton-inte a-chev-H chev-0-3 op0" id="chev-0-3"></div>
+
+                                <!-- Ligne 1 -->
+                                <div class="jeton targetjeton jeton-inte a-chev-H chev-3-6 op0" id="chev-3-6"></div>
+                                <div class="jeton targetjeton jeton-inte a-chev-H chev-6-9 op0" id="chev-6-9"></div>
+                                <div class="jeton targetjeton jeton-inte a-chev-H chev-9-12 op0" id="chev-9-12"></div>
+                                <div class="jeton targetjeton jeton-inte a-chev-H chev-12-15 op0" id="chev-12-15"></div>
+                                <div class="jeton targetjeton jeton-inte a-chev-H chev-15-18 op0" id="chev-15-18"></div>
+                                <div class="jeton targetjeton jeton-inte a-chev-H chev-18-21 op0" id="chev-18-21"></div>
+                                <div class="jeton targetjeton jeton-inte a-chev-H chev-21-24 op0" id="chev-21-24"></div>
+                                <div class="jeton targetjeton jeton-inte a-chev-H chev-24-27 op0" id="chev-24-27"></div>
+                                <div class="jeton targetjeton jeton-inte a-chev-H chev-27-30 op0" id="chev-27-30"></div>
+                                <div class="jeton targetjeton jeton-inte a-chev-H chev-30-33 op0" id="chev-30-33"></div>
+                                <div class="jeton targetjeton jeton-inte a-chev-H chev-33-36 op0" id="chev-33-36"></div>
+
+                                <!-- Ligne 2 -->
+                                <div class="jeton targetjeton jeton-inte a-chev-H chev-2-5 op0" id="chev-2-5"></div>
+                                <div class="jeton targetjeton jeton-inte a-chev-H chev-5-8 op0" id="chev-5-8"></div>
+                                <div class="jeton targetjeton jeton-inte a-chev-H chev-8-11 op0" id="chev-8-11"></div>
+                                <div class="jeton targetjeton jeton-inte a-chev-H chev-11-14 op0" id="chev-11-14"></div>
+                                <div class="jeton targetjeton jeton-inte a-chev-H chev-14-17 op0" id="chev-14-17"></div>
+                                <div class="jeton targetjeton jeton-inte a-chev-H chev-17-20 op0" id="chev-17-20"></div>
+                                <div class="jeton targetjeton jeton-inte a-chev-H chev-20-23 op0" id="chev-20-23"></div>
+                                <div class="jeton targetjeton jeton-inte a-chev-H chev-23-26 op0" id="chev-23-26"></div>
+                                <div class="jeton targetjeton jeton-inte a-chev-H chev-26-29 op0" id="chev-26-29"></div>
+                                <div class="jeton targetjeton jeton-inte a-chev-H chev-29-32 op0" id="chev-29-32"></div>
+                                <div class="jeton targetjeton jeton-inte a-chev-H chev-32-35 op0" id="chev-32-35"></div>
+
+                                <!-- Ligne 3 -->
+                                <div class="jeton targetjeton jeton-inte a-chev-H chev-1-4 op0" id="chev-1-4"></div>
+                                <div class="jeton targetjeton jeton-inte a-chev-H chev-4-7 op0" id="chev-4-7"></div>
+                                <div class="jeton targetjeton jeton-inte a-chev-H chev-7-10 op0" id="chev-7-10"></div>
+                                <div class="jeton targetjeton jeton-inte a-chev-H chev-10-13 op0" id="chev-10-13"></div>
+                                <div class="jeton targetjeton jeton-inte a-chev-H chev-13-16 op0" id="chev-13-16"></div>
+                                <div class="jeton targetjeton jeton-inte a-chev-H chev-16-19 op0" id="chev-16-19"></div>
+                                <div class="jeton targetjeton jeton-inte a-chev-H chev-19-22 op0" id="chev-19-22"></div>
+                                <div class="jeton targetjeton jeton-inte a-chev-H chev-22-25 op0" id="chev-22-25"></div>
+                                <div class="jeton targetjeton jeton-inte a-chev-H chev-25-28 op0" id="chev-25-28"></div>
+                                <div class="jeton targetjeton jeton-inte a-chev-H chev-28-31 op0" id="chev-28-31"></div>
+                                <div class="jeton targetjeton jeton-inte a-chev-H chev-31-34 op0" id="chev-31-34"></div>
+                            </div>
+
+                            <!-- Jetons mises à cheval verticalement -->
+                            <div>
+                                <!-- Ligne 1 -->
+                                <div class="jeton targetjeton jeton-inte a-chev-V chev-2-3 op0" id="chev-2-3"></div>
+                                <div class="jeton targetjeton jeton-inte a-chev-V chev-5-6 op0" id="chev-5-6"></div>
+                                <div class="jeton targetjeton jeton-inte a-chev-V chev-8-9 op0" id="chev-8-9"></div>
+                                <div class="jeton targetjeton jeton-inte a-chev-V chev-11-12 op0" id="chev-11-12"></div>
+                                <div class="jeton targetjeton jeton-inte a-chev-V chev-14-15 op0" id="chev-14-15"></div>
+                                <div class="jeton targetjeton jeton-inte a-chev-V chev-17-18 op0" id="chev-17-18"></div>
+                                <div class="jeton targetjeton jeton-inte a-chev-V chev-20-21 op0" id="chev-20-21"></div>
+                                <div class="jeton targetjeton jeton-inte a-chev-V chev-23-24 op0" id="chev-23-24"></div>
+                                <div class="jeton targetjeton jeton-inte a-chev-V chev-26-27 op0" id="chev-26-27"></div>
+                                <div class="jeton targetjeton jeton-inte a-chev-V chev-29-30 op0" id="chev-29-30"></div>
+                                <div class="jeton targetjeton jeton-inte a-chev-V chev-32-33 op0" id="chev-32-33"></div>
+                                <div class="jeton targetjeton jeton-inte a-chev-V chev-35-36 op0" id="chev-35-36"></div>
+
+                                <!-- Ligne 2 -->
+                                <div class="jeton targetjeton jeton-inte a-chev-V chev-1-2 op0" id="chev-1-2"></div>
+                                <div class="jeton targetjeton jeton-inte a-chev-V chev-4-5 op0" id="chev-4-5"></div>
+                                <div class="jeton targetjeton jeton-inte a-chev-V chev-7-8 op0" id="chev-7-8"></div>
+                                <div class="jeton targetjeton jeton-inte a-chev-V chev-10-11 op0" id="chev-10-11"></div>
+                                <div class="jeton targetjeton jeton-inte a-chev-V chev-13-14 op0" id="chev-13-14"></div>
+                                <div class="jeton targetjeton jeton-inte a-chev-V chev-16-17 op0" id="chev-16-17"></div>
+                                <div class="jeton targetjeton jeton-inte a-chev-V chev-19-20 op0" id="chev-19-20"></div>
+                                <div class="jeton targetjeton jeton-inte a-chev-V chev-22-23 op0" id="chev-22-23"></div>
+                                <div class="jeton targetjeton jeton-inte a-chev-V chev-25-26 op0" id="chev-25-26"></div>
+                                <div class="jeton targetjeton jeton-inte a-chev-V chev-28-29 op0" id="chev-28-29"></div>
+                                <div class="jeton targetjeton jeton-inte a-chev-V chev-31-32 op0" id="chev-31-32"></div>
+                                <div class="jeton targetjeton jeton-inte a-chev-V chev-34-35 op0" id="chev-34-35"></div>
+                            </div>
+
+                            <!-- Jetons mises en carré -->
+                            <div>
+                                <!-- Ligne 1 -->
+                                <div class="jeton targetjeton targetjeton jeton-inte en-carre carre-2-3-5-6 op0" id="carre-2-3-5-6"></div>
+                                <div class="jeton targetjeton jeton-inte en-carre carre-5-6-8-9 op0" id="carre-5-6-8-9"></div>
+                                <div class="jeton targetjeton jeton-inte en-carre carre-8-9-11-12 op0" id="carre-8-9-11-12"></div>
+                                <div class="jeton targetjeton jeton-inte en-carre carre-11-12-14-15 op0" id="carre-11-12-14-15"></div>
+                                <div class="jeton targetjeton jeton-inte en-carre carre-14-15-17-18 op0" id="carre-14-15-17-18"></div>
+                                <div class="jeton targetjeton jeton-inte en-carre carre-17-18-20-21 op0" id="carre-17-18-20-21"></div>
+                                <div class="jeton targetjeton jeton-inte en-carre carre-20-21-23-24 op0" id="carre-20-21-23-24"></div>
+                                <div class="jeton targetjeton jeton-inte en-carre carre-23-24-26-27 op0" id="carre-23-24-26-27"></div>
+                                <div class="jeton targetjeton jeton-inte en-carre carre-26-27-29-30 op0" id="carre-26-27-29-30"></div>
+                                <div class="jeton targetjeton jeton-inte en-carre carre-29-30-32-33 op0" id="carre-29-30-32-33"></div>
+                                <div class="jeton targetjeton jeton-inte en-carre carre-32-33-35-36 op0" id="carre-32-33-35-36"></div>
+
+                                <!-- Ligne 2 -->
+                                <div class="jeton targetjeton jeton-inte en-carre carre-1-2-4-5 op0" id="carre-1-2-4-5"></div>
+                                <div class="jeton targetjeton jeton-inte en-carre carre-4-5-7-8 op0" id="carre-4-5-7-8"></div>
+                                <div class="jeton targetjeton jeton-inte en-carre carre-7-8-10-11 op0" id="carre-7-8-10-11"></div>
+                                <div class="jeton targetjeton jeton-inte en-carre carre-10-11-13-14 op0" id="carre-10-11-13-14"></div>
+                                <div class="jeton targetjeton jeton-inte en-carre carre-13-14-16-17 op0" id="carre-13-14-16-17"></div>
+                                <div class="jeton targetjeton jeton-inte en-carre carre-16-17-19-20 op0" id="carre-16-17-19-20"></div>
+                                <div class="jeton targetjeton jeton-inte en-carre carre-19-20-22-23 op0" id="carre-19-20-22-23"></div>
+                                <div class="jeton targetjeton jeton-inte en-carre carre-22-23-25-26 op0" id="carre-22-23-25-26"></div>
+                                <div class="jeton targetjeton jeton-inte en-carre carre-25-26-28-29 op0" id="carre-25-26-28-29"></div>
+                                <div class="jeton targetjeton jeton-inte en-carre carre-28-29-31-32 op0" id="carre-28-29-31-32"></div>
+                                <div class="jeton targetjeton jeton-inte en-carre carre-31-32-34-35 op0" id="carre-31-32-34-35"></div>
+                            </div>
+
+                            <!-- Jetons mises en plein -->
+                            <div>
+                                <div class="jeton targetjeton jeton-inte en-plein plein-0 op0" id="plein-0"></div>
+
+                                <!-- Ligne 1 -->
+                                <div class="jeton targetjeton jeton-inte en-plein plein-3 op0" id="plein-3"></div>
+                                <div class="jeton targetjeton jeton-inte en-plein plein-6 op0" id="plein-6"></div>
+                                <div class="jeton targetjeton jeton-inte en-plein plein-9 op0" id="plein-9"></div>
+                                <div class="jeton targetjeton jeton-inte en-plein plein-12 op0" id="plein-12"></div>
+                                <div class="jeton targetjeton jeton-inte en-plein plein-15 op0" id="plein-15"></div>
+                                <div class="jeton targetjeton jeton-inte en-plein plein-18 op0" id="plein-18"></div>
+                                <div class="jeton targetjeton jeton-inte en-plein plein-21 op0" id="plein-21"></div>
+                                <div class="jeton targetjeton jeton-inte en-plein plein-24 op0" id="plein-24"></div>
+                                <div class="jeton targetjeton jeton-inte en-plein plein-27 op0" id="plein-27"></div>
+                                <div class="jeton targetjeton jeton-inte en-plein plein-30 op0" id="plein-30"></div>
+                                <div class="jeton targetjeton jeton-inte en-plein plein-33 op0" id="plein-33"></div>
+                                <div class="jeton targetjeton jeton-inte en-plein plein-36 op0" id="plein-36"></div>
+
+                                <!-- Ligne 2 -->
+                                <div class="jeton targetjeton jeton-inte en-plein plein-2 op0" id="plein-2"></div>
+                                <div class="jeton targetjeton jeton-inte en-plein plein-5 op0" id="plein-5"></div>
+                                <div class="jeton targetjeton jeton-inte en-plein plein-8 op0" id="plein-8"></div>
+                                <div class="jeton targetjeton jeton-inte en-plein plein-11 op0" id="plein-11"></div>
+                                <div class="jeton targetjeton jeton-inte en-plein plein-14 op0" id="plein-14"></div>
+                                <div class="jeton targetjeton jeton-inte en-plein plein-17 op0" id="plein-17"></div>
+                                <div class="jeton targetjeton jeton-inte en-plein plein-20 op0" id="plein-20"></div>
+                                <div class="jeton targetjeton jeton-inte en-plein plein-23 op0" id="plein-23"></div>
+                                <div class="jeton targetjeton jeton-inte en-plein plein-26 op0" id="plein-26"></div>
+                                <div class="jeton targetjeton jeton-inte en-plein plein-29 op0" id="plein-29"></div>
+                                <div class="jeton targetjeton jeton-inte en-plein plein-32 op0" id="plein-32"></div>
+                                <div class="jeton targetjeton jeton-inte en-plein plein-35 op0" id="plein-35"></div>
+
+                                <!-- Ligne 3 -->
+                                <div class="jeton targetjeton jeton-inte en-plein plein-1 op0" id="plein-1"></div>
+                                <div class="jeton targetjeton jeton-inte en-plein plein-4 op0" id="plein-4"></div>
+                                <div class="jeton targetjeton jeton-inte en-plein plein-7 op0" id="plein-7"></div>
+                                <div class="jeton targetjeton jeton-inte en-plein plein-10 op0" id="plein-10"></div>
+                                <div class="jeton targetjeton jeton-inte en-plein plein-13 op0" id="plein-13"></div>
+                                <div class="jeton targetjeton jeton-inte en-plein plein-16 op0" id="plein-16"></div>
+                                <div class="jeton targetjeton jeton-inte en-plein plein-19 op0" id="plein-19"></div>
+                                <div class="jeton targetjeton jeton-inte en-plein plein-22 op0" id="plein-22"></div>
+                                <div class="jeton targetjeton jeton-inte en-plein plein-25 op0" id="plein-25"></div>
+                                <div class="jeton targetjeton jeton-inte en-plein plein-28 op0" id="plein-28"></div>
+                                <div class="jeton targetjeton jeton-inte en-plein plein-31 op0" id="plein-31"></div>
+                                <div class="jeton targetjeton jeton-inte en-plein plein-34 op0" id="plein-34"></div>
+                            </div>
+
+                            <!-- Jetons mises en sixain -->
+                            <div>
+                                <div class="jeton targetjeton jeton-inte en-sixain sixain-1-2-3-4-5-6 op0" id="sixain-1-2-3-4-5-6"></div>
+                                <div class="jeton targetjeton jeton-inte en-sixain sixain-4-5-6-7-8-9 op0" id="sixain-4-5-6-7-8-9"></div>
+                                <div class="jeton targetjeton jeton-inte en-sixain sixain-7-8-9-10-11-12 op0" id="sixain-7-8-9-10-11-12"></div>
+                                <div class="jeton targetjeton jeton-inte en-sixain sixain-10-11-12-13-14-15 op0" id="sixain-10-11-12-13-14-15"></div>
+                                <div class="jeton targetjeton jeton-inte en-sixain sixain-13-14-15-16-17-18 op0" id="sixain-13-14-15-16-17-18"></div>
+                                <div class="jeton targetjeton jeton-inte en-sixain sixain-16-17-18-19-20-21 op0" id="sixain-16-17-18-19-20-21"></div>
+                                <div class="jeton targetjeton jeton-inte en-sixain sixain-19-20-21-22-23-24 op0" id="sixain-19-20-21-22-23-24"></div>
+                                <div class="jeton targetjeton jeton-inte en-sixain sixain-22-23-24-25-26-27 op0" id="sixain-22-23-24-25-26-27"></div>
+                                <div class="jeton targetjeton jeton-inte en-sixain sixain-25-26-27-28-29-30 op0" id="sixain-25-26-27-28-29-30"></div>
+                                <div class="jeton targetjeton jeton-inte en-sixain sixain-28-29-30-31-32-33 op0" id="sixain-28-29-30-31-32-33"></div>
+                                <div class="jeton targetjeton jeton-inte en-sixain sixain-31-32-33-34-35-36 op0" id="sixain-31-32-33-34-35-36"></div>
+                            </div>
+
+                            <!-- Jetons mises en transversale pleine -->
+                            <div>
+                                <div class="jeton targetjeton jeton-inte transversale-pleine transP-1-2-3 op0" id="transP-1-2-3"></div>
+                                <div class="jeton targetjeton jeton-inte transversale-pleine transP-4-5-6 op0" id="transP-4-5-6"></div>
+                                <div class="jeton targetjeton jeton-inte transversale-pleine transP-7-8-9 op0" id="transP-7-8-9"></div>
+                                <div class="jeton targetjeton jeton-inte transversale-pleine transP-10-11-12 op0" id="transP-10-11-12"></div>
+                                <div class="jeton targetjeton jeton-inte transversale-pleine transP-13-14-15 op0" id="transP-13-14-15"></div>
+                                <div class="jeton targetjeton jeton-inte transversale-pleine transP-16-17-18 op0" id="transP-16-17-18"></div>
+                                <div class="jeton targetjeton jeton-inte transversale-pleine transP-19-20-21 op0" id="transP-19-20-21"></div>
+                                <div class="jeton targetjeton jeton-inte transversale-pleine transP-22-23-24 op0" id="transP-22-23-24"></div>
+                                <div class="jeton targetjeton jeton-inte transversale-pleine transP-25-26-27 op0" id="transP-25-26-27"></div>
+                                <div class="jeton targetjeton jeton-inte transversale-pleine transP-28-29-30 op0" id="transP-28-29-30"></div>
+                                <div class="jeton targetjeton jeton-inte transversale-pleine transP-31-32-33 op0" id="transP-31-32-33"></div>
+                                <div class="jeton targetjeton jeton-inte transversale-pleine transP-34-35-36 op0" id="transP-34-35-36"></div>
+                            </div>
+
+                        <!-- Paris extérieurs -->
+                            <!-- Jetons mises sur la couleur rouge -->
+                            <div class="jeton targetjeton jeton-exte couleur-rouge op0" id="couleur-rouge"></div>
+
+                            <!-- Jetons mises sur la couleur noire -->
+                            <div class="jeton targetjeton jeton-exte couleur-noire op0" id="couleur-noire"></div>
+
+                            <!-- Jetons mises sur manque -->
+                            <div class="jeton targetjeton jeton-exte jeton-manque op0" id="jeton-manque"></div>
+
+                            <!-- Jetons mises sur passe -->
+                            <div class="jeton targetjeton jeton-exte jeton-passe op0" id="jeton-passe"></div>
+                            
+
+                            <!-- Jetons mises sur impair -->
+                            <div class="jeton targetjeton jeton-exte jeton-impair op0" id="jeton-impair"></div>
+
+                            <!-- Jetons mises sur pair -->
+                            <div class="jeton targetjeton jeton-exte jeton-pair op0" id="jeton-pair">
+                                <!-- <div class="mise">57</div> -->
+                            </div>
+
+                            <!-- Jetons mises sur deux colonnes -->
+                            <div>
+                                <div class="jeton targetjeton jeton-exte deux-colonnes deuxCol-1-2 op0" id="deuxCol-1-2"></div>
+                                <div class="jeton targetjeton jeton-exte deux-colonnes deuxCol-2-3 op0" id="deuxCol-2-3"></div>
+                            </div>
+
+                            <!-- Jetons mises sur une colonne -->
+                            <div>
+                                <div class="jeton targetjeton jeton-exte colonne-simple colSimple-1 op0" id="colSimple-1"></div>
+                                <div class="jeton targetjeton jeton-exte colonne-simple colSimple-2 op0" id="colSimple-2"></div>
+                                <div class="jeton targetjeton jeton-exte colonne-simple colSimple-3 op0" id="colSimple-3"></div>
+                            </div>
+
+                            <!-- Jetons mises sur deux douzaines -->
+                            <div>
+                                <div class="jeton targetjeton jeton-exte deux-douzaines deuxDouz-P-M op0" id="deuxDouz-P-M"></div>
+                                <div class="jeton targetjeton jeton-exte deux-douzaines deuxDouz-M-D op0" id="deuxDouz-M-D"></div>
+                            </div>
+
+                            <!-- Jetons mises sur une douzaine -->
+                            <div>
+                                <div class="jeton targetjeton jeton-exte douzaine-simple douzSimple-P op0" id="douzSimple-P"></div>
+                                <div class="jeton targetjeton jeton-exte douzaine-simple douzSimple-M op0" id="douzSimple-M"></div>
+                                <div class="jeton targetjeton jeton-exte douzaine-simple douzSimple-D op0" id="douzSimple-D"></div>
+                            </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+    </div>
+    <div class="cadre-info">
+        <div class="info">
+            <div class="info-grille" style="left:100%">
+                <div class="ens-choix-mises none">
+                    <div class="titre-choix-mises"></div>
+                    <div class="quota-gains"></div>
+                    <div class="instructions-croupier-3">Combien voulez-vous parier ?</div>
+                    <div class="ens-quantite">
+                        <div class="btn-moins" id="btn-moins">-</div>
+                        <div class="btn-plus" id="btn-plus">+</div>
+                        <input class="nbr-quantite" id="nbr-quantite" oninput="supprimerCaractereNonNumerique()"></input>
+                        <div class="barre-quantite">
+                            <div id="draggableDiv" class="draggable">
+                                <!-- Glissez-moi horizontalement -->
+                            </div>
+                            <div class="flux-quantite" id="flux-quantite"></div>
+                        </div>
+                    </div>
+                    <div class="btn-valider-mises" id="btn-valider-mises">Valider</div>
+                    <div class="retour-mises" id="retour-mises">Annuler</div>
+                </div>
+    
+                <div class="ens-choix-paris">
+                    <div class="instructions-croupier-1 none"></div>
+                    <div class="instructions-croupier-2 none">Choisissez un type de pari</div>
+                    <div class="choix-niveau choix-niveau-1 none" id="ch-niv-1">
+                        <div class="choix-paris">
+                            <div class="texte-paris" id="paris-interieurs">Paris intérieurs</div>
+                            <div class="desactiver-inte none">Max : 3</div>
+                        </div>
+                        <div class="choix-paris">
+                            <div class="texte-paris" id="paris-exterieurs">Paris extérieurs</div>
+                            <div class="desactiver-exte none">Max : <span style="margin-left: 4%;" id="lim-mise-exte"></span></div>
+                        </div>
+    
+                    </div>
+    
+    
+                    <!-- Ensemble des choix de paris dans les paris intérieurs -->
+                    <div class="choix-niveau choix-niveau-2 none" id="ch-inte-niv-2">
+                        <div class="choix-paris">
+                            <div class="texte-paris" id="paris-en-plein">Mise en plein</div>
+                        </div>
+                        <div class="choix-paris">
+                            <div class="texte-paris" id="paris-a-chevalV">Mise à cheval verticalement</div>
+                        </div>
+                    </div>
+                    <div class="choix-niveau choix-niveau-2 none" id="ch-inte-niv-2">
+                        <div class="choix-paris">
+                            <div class="texte-paris" id="paris-a-chevalH">Mise à cheval horizontalement</div>
+                        </div>
+                        <div class="choix-paris">
+                            <div class="texte-paris" id="paris-en-transversale-pleine">Mise en transversale pleine</div>
+                        </div>
+                    </div>
+                    <div class="choix-niveau choix-niveau-2 none" id="ch-inte-niv-2">
+                        <div class="choix-paris">
+                            <div class="texte-paris" id="paris-en-carre">Mise en carré</div>
+                        </div>
+                        <div class="choix-paris">
+                            <div class="texte-paris" id="paris-en-sixain">Mise en sixain (transversale simple)</div>
+                        </div>
+                    </div>
+    
+                    <!-- Ensemble des choix de paris dans les paris extérieurs -->
+                    <div class="choix-niveau choix-niveau-2 none" id="ch-exte-niv-2">
+                        <div class="choix-paris">
+                            <div class="texte-paris" id="paris-couleur">Couleur</div>
+                        </div>
+                        <div class="choix-paris">
+                            <div class="texte-paris" id="paris-pair-impair">Pair/Impair</div>
+                        </div>
+                    </div>
+                    <div class="choix-niveau choix-niveau-2 none" id="ch-exte-niv-2">
+                        <div class="choix-paris">
+                            <div class="texte-paris" id="paris-manque-passe">Manque/Passe</div>
+                        </div>
+                        <div class="choix-paris">
+                            <div class="texte-paris" id="paris-douzaine">Douzaine</div>
+                        </div>
+                    </div>
+                    <div class="choix-niveau choix-niveau-2 none" id="ch-exte-niv-2">
+                        <div class="choix-paris">
+                            <div class="texte-paris" id="paris-colonne">Colonne</div>
+                        </div>
+                        <div class="choix-paris">
+    
+                        </div>
+                    </div>
+    
+                    <!-- Ensemble des choix de paris dans les paris extérieurs douzaine -->
+                    <div class="choix-niveau choix-niveau-2 none" id="ch-douz-niv-3">
+                        <div class="choix-paris">
+                            <div class="texte-paris" id="paris-douzaine-simple">Douzaine simple</div>
+                        </div>
+                        <div class="choix-paris">
+                            <div class="texte-paris" id="paris-deux-douzaines">Deux douzaines</div>
+                        </div>
+                    </div>
+    
+                    <!-- Ensemble des choix de paris dans les paris extérieurs colonne -->
+                    <div class="choix-niveau choix-niveau-2 none" id="ch-col-niv-3">
+                        <div class="choix-paris">
+                            <div class="texte-paris" id="paris-colonne-simple">Colonne simple</div>
+                        </div>
+                        <div class="choix-paris">
+                            <div class="texte-paris" id="paris-deux-colonnes">Deux colonnes</div>
+                        </div>
+                    </div>
+                    <div class="precedent-paris none" id="precedent-paris">Précédent</div>
+                </div>
+    
+                <div class="info-mises none">
+                    <div class="nbr-mise">
+                        <span>Nombre de mises : </span>
+                        <span style="margin-left: 5%;" id="nbr-mise">0</span>
+                        <span style="margin-left: 2%;">sur</span>
+                        <span style="margin-left: 2%;" id="lim-nbr-mise"></span>
+                    </div>
+                    <div class="liste-mises">
+                        <!-- <div class="mises">rrrr</div> -->
+                    </div>
+                    <div class="btn-valider-toutes-mises">Valider le tour</div>
+                    <div class="btn-reinitialiser">Réinitialiser les mises</div>
+                </div>
+            </div>
+            <div class="info-roue none" style="left:100%">
+                <div class="info-croupier-roue">Lancé de la roue !</div>
+                <div class="resultat-roue"></div>
+            </div>
+            <div class="info-gains none" style="left:100%">
+                <div class="annonce-resultat">
+                    
+                </div>
+                <div class="gains-gagnantes" id="info-gain">
+                    <div class="titre-mises-gagnantes">Mises gagnantes :</div>
+                    <div class="mises-gagnantes" id="mises-gagnantes">
+    
+                    </div>
+                    <div class="gains none" id="info-gain">
+                        <div class="titre-mise-gagnante">Paiement de la mise gagnante la mieux rénumérée :</div>
+                        <div class="mise-gagnante" id="mise-gagnante"></div>
+                        <div class="gains-totaux">Gains : + <span style="margin-left: 1.5%; margin-right: 1.5%;" id="multiplicateur"></span> x <span style="margin-left: 1.5%; margin-right: 1.5%;" id="unites"></span> = <span style="margin-left: 1.5%; margin-right: 1.5%;" id="gains-totaux"></span> unités</div>
+                    </div>
+                </div>
+                <div class="mises-prison none" id="info-gain">
+                    <div class="ens-regle-0 none" id="info-gain">
+                        <div class="info-croupier-4">Une de vos mises est concenée par la règle du zéro.</div>
+                        <div class="mise-prison" id="mise-prison"></div>
+                        <div class="info-croupier-5">Voulez-vous utiliser la règle de "La Partage" ou la règle "En Prison" ?</div>
+                        <div class="choix-zero">
+                            <div class="regle-zero">
+                                <div class="choix-0" id="regle-partage">La Partage</div>
+                            </div>
+                            <div class="regle-zero">
+                                <div class="choix-0" id="regle-prison">En Prison</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gains-regle-zero none" id="info-gain">
+                        <div class="mise-prison-gains"  id="mise-prison-gains"></div>
+                        <div class="info-croupier-6">Récupération de la mise "En Prison" :</div>
+                        <div id="gains-prison">+ <span style="margin-left: 1.5%; margin-right: 1.5%;" id="unite-prison"></span> unités</div>
+                    </div>
+                </div>
+            </div>
+            </div>
+    </div>
+    <div class="ecran-debut ">
+        <div class="gros-titre">La Roulette à la Française</div>
+        <div class="menu">
+            <div class="btn-menu" id="btn-jouer">Nouvelle Partie</div>
+            <div class="btn-menu" id="btn-tutoriel">Tutoriel</div>
+            <div class="btn-menu" id="btn-prevention">Avertissements</div>
+        </div>
+        <div class="avertissements none">
+            <div class="btn-retour-menu none" id="btn-retour-aver">Quitter</div>
+            <div class="titre-aver">Avertissements</div>
+            <div class="lu-et-approuve">J'ai lu et j'ai pris conscience des avertissements et des risques</div>
+        </div>
+    </div>
+    <div class="tutoriel none">
+        <div class="btn-retour-menu" id="btn-retour-tuto">Quitter</div>
+    </div>
+    <div class="btn-jeu-tuto none">Tutoriel</div>
+    <div class="ecran-fin none">
+        <div class="gros-titre">Statistiques de la partie</div>
+        <div class="statistiques">
+            <div class="sous-stat" id="sous-stat-1">
+
+            </div>
+            <div class="sous-stat" id="sous-stat-2">
+
+            </div>
+        </div>
+    </div>
+    
+</body>
+
+<script src="js/general.js"></script>
+<script src="js/mises.js"></script>
+<script src="js/gains.js"></script>
+<script src="js/info.js"></script>
+<script src="js/jetons.js"></script>
+<script src="js/bille.js"></script>
+<script src="js/rotation-roue.js"></script>
+</html>

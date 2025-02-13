@@ -1,0 +1,205 @@
+.num0{
+    background-color: #39d039ff;
+}
+.num1{
+    background-color: #c10000ff;
+}
+.num2{
+    background-color: #171717ff;
+}
+.num3{
+    background-color: #c10000ff;
+}
+.num4{
+    background-color: #171717ff;
+}
+.num5{
+    background-color: #c10000ff;
+}
+.num6{
+    background-color: #171717ff;
+}
+.num7{
+    background-color: #c10000ff;
+}
+.num8{
+    background-color: #171717ff;
+}
+.num9{
+    background-color: #c10000ff;
+}
+.num10{
+    background-color: #171717ff;
+}
+.num11{
+    background-color: #171717ff;
+}
+.num12{
+    background-color: #c10000ff;
+}
+.num13{
+    background-color: #171717ff;
+}
+.num14{
+    background-color: #c10000ff;
+}
+.num15{
+    background-color: #171717ff;
+}
+.num16{
+    background-color: #c10000ff;
+}
+.num17{
+    background-color: #171717ff;
+}
+.num18{
+    background-color: #c10000ff;
+}
+.num19{
+    background-color: #c10000ff;
+}
+.num20{
+    background-color: #171717ff;
+}
+.num21{
+    background-color: #c10000ff;
+}
+.num22{
+    background-color: #171717ff;
+}
+.num23{
+    background-color: #c10000ff;
+}
+.num24{
+    background-color: #171717ff;
+}
+.num25{
+    background-color: #c10000ff;
+}
+.num26{
+    background-color: #171717ff;
+}
+.num27{
+    background-color: #c10000ff;
+}
+.num28{
+    background-color: #171717ff;
+}
+.num29{
+    background-color: #171717ff;
+}
+.num30{
+    background-color: #c10000ff;
+}
+.num31{
+    background-color: #171717ff;
+}
+.num32{
+    background-color: #c10000ff;
+}
+.num33{
+    background-color: #171717ff;
+}
+.num34{
+    background-color: #c10000ff;
+}
+.num35{
+    background-color: #171717ff;
+}
+.num36{
+    background-color: #c10000ff;
+}
+
+.manque{
+    background-color: #249a42ff;
+}
+.passe{
+    background-color: #249a42ff;
+}
+.pair{
+    background-color: #249a42ff;
+}
+.impair{
+    background-color: #249a42ff;
+}
+.rouge{
+    background-color: #249a42ff;
+}
+.noir{
+    background-color: #249a42ff;
+}
+.d12D{
+    background-color: #249a42ff;
+}
+.d12P{
+    background-color: #249a42ff;
+}
+.d12M{
+    background-color: #249a42ff;
+}
+.colonne1{
+    background-color: #249a42ff;
+}
+.colonne2{
+    background-color: #249a42ff;
+}
+.colonne3{
+    background-color: #249a42ff;
+}
+
+.text-num{
+    display: inline;
+    transform: rotate(-90deg);
+    font-weight: bold;
+    font-size: 130%;
+}
+.text-num0{
+    display: inline;
+    transform: rotate(-90deg);
+    font-weight: bold;
+    font-size: 220%;
+}
+
+.text-grosse-case1{
+    display: inline;
+    /* transform: rotate(180deg); */
+    font-weight: bold;
+    font-size: 185%;
+    text-align: center;
+}
+.text-grosse-case2{
+    display: inline;
+    font-weight: bold;
+    font-size: 185%;
+    text-align: center;
+}
+.petit-texte{
+    font-size: 70%;
+}
+
+.text-colonne{
+    transform: rotate(-90deg);
+    text-align: center;
+    font-weight: bold;
+    font-size: 120%;
+}
+.text-douzaine{
+    transform: rotate(-90deg);
+    text-align: center;
+    font-weight: bold;
+    font-size: 150%;
+}
+
+.symbole-rouge{
+    background-color: #c10000ff;
+    width: 60%;
+    height: 90%;
+    clip-path: polygon(50% 25%, 100% 50%, 50% 75%, 0% 50%);
+}
+
+.symbole-noir{
+    background-color: #171717ff;
+    width: 60%;
+    height: 90%;
+    clip-path: polygon(50% 25%, 100% 50%, 50% 75%, 0% 50%);
+}
